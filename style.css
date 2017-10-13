@@ -1,0 +1,84 @@
+.footer{
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+.footer img{
+  width: 100px;
+  height: 100px;
+}
+div.alert, div.alert-info{
+  margin: auto;
+  margin-top: 70px;
+}
+#map{
+  height:300px;
+  margin: auto;
+  margin-top: 10px;
+  width: 90%;
+}
+#error{
+  margin-bottom: 10px;
+}
+#back{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+body {
+  background-image: url('img/fundo.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.navbar-default {
+  background-color: #4DAE51;
+}
+.navbar-brand {
+  background-color: #4DAE51;
+}
+.navbar-default > .container-fluid > .navbar-header > a{
+  color: #ffffff;
+}
+.navbar-default > .container-fluid > .navbar-header > .navbar-toggle > .icon-bar{
+  background-color: #ffffff;
+}
+.navbar-default > .container-fluid > .navbar-collapse > .collapse{
+  background-color: #4DAE51;
+}
+.navbar-default > .container-fluid > .navbar-header > .navbar-toggle:hover{
+  background-color: #ffe200;
+}
+.navbar-collapse > .navbar-nav > li > a {
+    color: #ffffff;
+}
+.navbar-collapse > .navbar-nav > li > a:hover{
+  background-color: #ffe200;
+}
+.navbar-collapse > .navbar-nav > li.active > a{
+  background-color: #ffe200;
+}
+.navbar-collapse > .navbar-nav > li.active > a:hover{
+  background-color: #ffe200;
+}
+div.panel-heading:hover{
+  background-color: #9eb9ff;
+  color: #ffffff;
+}
+
+@media (max-width: 203px) {
+  div.alert, div.alert-info{
+    margin: auto;
+    margin-top: 110px;
+  }
+}
+@media (min-width: 768px) and ( max-width: 1125px) {
+  div.alert, div.alert-info{
+    margin: auto;
+    margin-top: 175px;
+  }
+}
+
+
+

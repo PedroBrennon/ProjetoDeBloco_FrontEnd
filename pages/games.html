@@ -1,0 +1,9 @@
+<div class="tab-pane fade in active">
+    <h2 class="panel panel-heading"><i class="fa fa-futbol-o"></i> Olympic Games</h2>
+    <div class="panel panel-primary" data-ng-repeat="j in jogosOlimpicos | orderBy: 'name'" data-ng-click="criaMapa('map', j)">
+        <div class="panel-heading"> {{ j.name }}</div>
+        <div class="panel-body">
+            <p>Description: {{j.description.link}}</p>
+        </div>
+    </div>
+</div>

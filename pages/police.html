@@ -1,0 +1,10 @@
+<div class="tab-pane fade in active">
+    <h2 class="panel panel-heading"><span class="glyphicon glyphicon-star-empty"></span> Police stations</h2>
+    <div class="panel panel-primary" data-ng-repeat="d in delegacias | orderBy: 'name'" data-ng-click="criaMapa('map', d)">
+        <div class="panel-heading"> {{ d.name }}</div>
+        <div class="panel-body">
+            <p>Description: {{ d.description.text }}</p>
+            <p>Address: {{ d.geoResult.address }}</p>
+        </div>
+    </div>
+</div>

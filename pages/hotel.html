@@ -1,0 +1,11 @@
+<div class="tab-pane fade in active">
+    <h2 class="panel panel-heading"><span class="glyphicon glyphicon-bed"></span> Hotel</h2>
+    <div class="panel panel-primary" data-ng-repeat="h in hoteis | orderBy: 'name'" data-ng-click="criaMapa('map', h)">
+        <div class="panel-heading"> {{ h.name }}</div>
+        <div class="panel-body">
+            <p>Description: {{h.description.short_text}}</p>
+            <p>Contacts: {{h.contactData.email}} <br/> {{h.contactData.website}}</p>
+            <p>Address: {{h.geoResult.address}}</p>
+        </div>
+    </div>
+</div>

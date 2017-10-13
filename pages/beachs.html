@@ -1,0 +1,10 @@
+<div class="tab-pane fade in active">
+    <h2 class="panel panel-heading"><span class="glyphicon glyphicon-sunglasses"></span> Beachs</h2>
+    <div class="panel panel-primary" data-ng-repeat="p in praias | orderBy: 'name'" data-ng-click="criaMapa('map', p)">
+        <div class="panel-heading"> {{ p.name }}</div>
+        <div class="panel-body">
+            <p>Description: {{ p.description.short_text }}</p>
+            <p>Address: {{ p.geoResult.address }}, {{p.geoResult.neighbourhood}}</p>
+        </div>
+    </div>
+</div>

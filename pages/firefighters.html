@@ -1,0 +1,10 @@
+<div class="tab-pane fade in active">
+    <h2 class="panel panel-heading"><i class="fa fa-fire-extinguisher"></i> Firefighters</h2>
+    <div class="panel panel-primary" data-ng-repeat="b in bombeiros | orderBy: 'name'" data-ng-click="criaMapa('map', b)">
+        <div class="panel-heading">{{ b.name }}</div>
+        <div class="panel-body">
+            <p>Description: {{ b.description.text }}</p>
+            <p>Address: {{ b.geoResult.address }}</p>
+        </div>
+    </div>
+</div>
